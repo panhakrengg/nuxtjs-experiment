@@ -10,4 +10,17 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-}); ``
+  // vite: {
+  //   css: {
+  //     preprocessorOptions: {
+  //       scss: {
+  //         additionalData: '@use "~/assets/scss/global.scss" as *;',
+  //       }
+  //     }
+  //   }
+  // }
+  components: [
+    { path: '~/component-module', pathPrefix: false },
+    '~/components'
+  ]
+});
